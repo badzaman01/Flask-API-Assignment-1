@@ -1,0 +1,159 @@
+/* navbar styles */
+.hero {
+  height: 15vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/Wands-Cores.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo {
+  color: red;
+  font-size: 68px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+button {
+  border: none;
+  background: red;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+button:hover {
+  color: black;
+}
+
+/* Main Body */
+.body {
+  width: 100%;
+  padding: 78px 0px;
+  background-color: #191919;
+}
+
+.body img {
+  height: 450px;
+  width: 700px;
+}
+
+.text {
+  padding-left: 10%;
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text h1 {
+  color: red;
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.text h5 {
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.text p {
+  color: white;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+span {
+  text-decoration: underline;
+}
+
+/* footer styles */
+.container {
+  max-width: 2300px;
+  background-color: red;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 70px 0;
+  padding: 0;
+}
+
+.footer-col {
+  padding: 0 15px;
+  width: 25%;
+}
+
+.footer-col h4 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 500;
+}
+
+.footer-col ul li a:hover {
+  color: blue;
+}
+
+.footer-col .social_links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.footer-col ul li a {
+  color: white;
+  font-size: 18px;
+  list-style-type: none;
+}
