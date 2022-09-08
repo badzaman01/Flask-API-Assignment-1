@@ -23,15 +23,19 @@
         <ul>
           <li><a href="{{ url_for('site.home') }}">Home</a></li>
           <li><a href="#">Wandlore</a></li>
+          {% if current_user.is_authenticated %}
           <li><a href="{{ url_for('site.profile') }}">Profile</a></li>
+          <li><a href="{{ url_for('auth.logout') }}">HLog Out</a></li>
           <li><a href="#">Sending an Owl</a></li>
         </ul>
+        {% else %}
         <a href="{{ url_for('auth.signin') }}">
           <button type="button">Sign In!</button>
         </a>
         <a href="{{ url_for('auth.signup') }}">
-          <button type="button">Enroll Today!</button>
+          <button type="button">Sign Up!</button>
         </a>
+        {% endif %}
       </nav>
     </div>
 
